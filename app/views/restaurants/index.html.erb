@@ -1,0 +1,17 @@
+
+
+<h2>All restaurants</h2>
+<% @restaurants.each do | restaurant | %>
+<p class="block">
+
+<%= link_to restaurant.name, restaurant_path(restaurant), class: "bold" %> <br>
+<%= restaurant.address %>
+
+</p>
+
+
+<% end %>
+
+<p class="block_link">
+  <%= link_to "Add new restaurant", new_restaurant_path %>
+</p>

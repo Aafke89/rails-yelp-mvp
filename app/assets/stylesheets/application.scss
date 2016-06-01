@@ -1,0 +1,48 @@
+// Graphical variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS
+@import "layout/index";
+@import "components/index";
+@import "pages/index";
+@import "vendor/index";
+
+@import "reviews.scss";
+
+body, h1, h2, h3 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.block {
+  background-color: rgba(20, 0, 20, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 400px;
+  text-align: left;
+}
+
+.block_link {
+  // background-color: rgba(20, 0, 20, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 400px;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.header {
+  height: 100px;
+  background-color: red;
+  border-bottom: 25px solid purple;
+}

@@ -1,0 +1,7 @@
+<%= form_for [@restaurant, @review] do |f| %>
+  <%= f.label :content %> <br>
+  <%= f.text_field :content, required: true %> <br> <br>
+  <%= f.label :rating %> <br>
+  <%= f.number_field :rating, max: 5, min: 1, required: true %> <br> <br>
+  <%= f.submit %> <br>
+  <% end %>

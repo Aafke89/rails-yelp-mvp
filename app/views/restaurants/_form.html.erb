@@ -1,0 +1,11 @@
+<%= form_for (@restaurant) do |f| %>
+  <%= f.label :name %> <br>
+  <%= f.text_field :name, required: true %> <br> <br>
+  <%= f.label :address %> <br>
+  <%= f.text_field :address, required: true%> <br> <br>
+  <%= f.label :phone_number %> <br>
+  <%= f.text_field :phone_number %> <br> <br>
+  <%= f.label :category %> <br>
+  <%= f.select :category, options_for_select(["chinese", "italian", "japanese", "french", "belgian"]) %> <br> <br>
+  <%= f.submit %> <br>
+  <% end %>
